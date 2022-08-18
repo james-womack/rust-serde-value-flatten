@@ -30,6 +30,7 @@
 //! ## Example
 //!
 //! ```rust
+//! # use serde::Serialize;
 //! #[derive(Serialize, Clone, Debug)]
 //! struct SubFoo {
 //!     a: String,
@@ -113,6 +114,7 @@ mod ser;
 /// ## Example
 /// 
 /// ```rust
+/// # use serde::Serialize;
 /// #[derive(Serialize, Clone, Debug)]
 /// struct SubFoo {
 ///     a: String,
