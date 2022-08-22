@@ -63,7 +63,7 @@ impl FlatSerializer {
             }
             Value::Seq(ref values) => {
                 for (i, val) in values.iter().enumerate() {
-                    parts.append(&mut self.disassemble(&mut self.format_key(xpath, key, value), &format!("{}", i), val));
+                    parts.append(&mut self.disassemble(&mut self.format_key(xpath, key, value), &format!("{}", i+1), val));
                 }
             }
             _ => {
